@@ -3,15 +3,34 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import { AppComponent } from './app.component';
+//Router
+import { routing } from './app.routes';
+
 
 //material design import
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
 
+
+//components 
+import { ShopsComponent } from './components/shops/shops.component';
+import { AppComponent } from './app.component';
+import { HomeComponent } from './components/home/home.component';
+import { AboutComponent } from './components/about/about.component';
+import { SignupComponent } from './components/signup/signup.component';
+import { LoginComponent } from './components/login/login.component';
+
+//services
+
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ShopsComponent,
+    HomeComponent,
+    AboutComponent,
+    SignupComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +43,11 @@ import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModu
     MdMenuModule,
     MdCardModule,
     MdToolbarModule,
-    MdIconModule
+    MdIconModule,
+
+    //router
+    routing,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
