@@ -9,16 +9,17 @@ import { routing } from './app.routes';
 
 //material design import
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
+import { MdGridListModule, MdButtonModule,MdSidenavModule,MdInputModule, MdCardModule,MdTabsModule,MdAutocompleteModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
 
 
 //components 
-import { ShopsComponent } from './components/shops/shops.component';
+import { ShopsComponent } from './components/mainmenu/shops/shops.component';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { SignupComponent } from './components/signup/signup.component';
-import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/mainmenu/home/home.component';
+import { AboutComponent } from './components/mainmenu/about/about.component';
+import { SignupComponent } from './components/mainmenu/signup/signup.component';
+import { LoginComponent } from './components/mainmenu/login/login.component';
+import { ItemlistComponent } from './components/itemlist/itemlist.component';
 
 //services
 
@@ -30,7 +31,8 @@ import { LoginComponent } from './components/login/login.component';
     HomeComponent,
     AboutComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    ItemlistComponent
   ],
   imports: [
     BrowserModule,
@@ -44,6 +46,12 @@ import { LoginComponent } from './components/login/login.component';
     MdCardModule,
     MdToolbarModule,
     MdIconModule,
+    MdAutocompleteModule,
+    MdTabsModule,
+    MdSidenavModule,
+    MdInputModule,
+    MdGridListModule
+    ,
 
     //router
     routing,

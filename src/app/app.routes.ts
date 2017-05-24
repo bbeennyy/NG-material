@@ -1,12 +1,13 @@
 import { RouterModule,Routes } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 //components import
-import { ShopsComponent } from './components/shops/shops.component';
+import { ShopsComponent } from './components/mainmenu/shops/shops.component';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home/home.component';
-import { AboutComponent } from './components/about/about.component';
-import { SignupComponent } from './components/signup/signup.component';
-import { LoginComponent } from './components/login/login.component';
+import { HomeComponent } from './components/mainmenu/home/home.component';
+import { AboutComponent } from './components/mainmenu/about/about.component';
+import { SignupComponent } from './components/mainmenu/signup/signup.component';
+import { LoginComponent } from './components/mainmenu/login/login.component';
+import { ItemlistComponent } from './components/itemlist/itemlist.component';
 
 const appRoutes:Routes = [
     {
@@ -28,6 +29,10 @@ const appRoutes:Routes = [
     {
         path:'login',
         component: LoginComponent,
+    },
+    {
+        path:'itemlist',
+        component: ItemlistComponent,
     }
 
 

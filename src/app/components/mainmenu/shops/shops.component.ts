@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { ItemlistComponent } from '../../itemlist/itemlist.component';
+
 
 @Component({
   selector: 'shops',
